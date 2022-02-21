@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background: rgb(72, 114, 72);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height:200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id ="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"><!--Desparador da função, e o selecionado do DOM-->
+        Interaja...
+    </div>
+</body>
+    <script>
+        var a = window.document.getElementById('area')//chamando no JS onde configuração qeuro configurar nesse caso na div  
+       
+        function clicar() {// FUNÇÃO CHAMANDO O OVENDO DESPARADOR 
+            a.innerText = 'Clicou!' //muda o conteudo dele para clicou
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'blue'
+        }
+    </script>
+    
+</html>
