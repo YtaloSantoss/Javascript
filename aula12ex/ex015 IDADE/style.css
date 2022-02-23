@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 body {
-    background-color: #66C4D9;
+    background-image: linear-gradient(to bottom,#0568A6,#049DBF,#04C4D9);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15pt;
+    background-attachment: fixed;
 }
 
 header {
