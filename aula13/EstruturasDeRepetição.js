@@ -1,4 +1,9 @@
 
+console.log('Vai comecar...')
+for (var c = 1; c <= 4; c++) {
+    console.log(c)
+}
+console.log('FIM!')
 //Faça isso 
 /*
 var c = 1
@@ -20,9 +25,3 @@ while ( c <= 6) {
 */
 
 //  Para 
-
-console.log('Vai comecar...')
-for (var c = 1; c <= 4; c++) {
-    console.log(c)
-}
-console.log('FIM!')
